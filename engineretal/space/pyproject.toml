@@ -1,7 +1,20 @@
-[project]
-name = "space"
+[tool.poetry]
+name = "retailengine"
 version = "0.1.0"
-description = "Add your description here"
-readme = "README.md"
-requires-python = ">=3.10"
-dependencies = []
+description = "Retail Space and Planogram Engine"
+authors = ["You"]
+package-mode = false
+
+[tool.poetry.dependencies]
+python = ">=3.9,<3.13"
+streamlit = "*"
+numpy = "*"
+pandas = "*"
+scikit-learn = "*"
+plotly = "*"
+reportlab = "*"
+streamlit-sortables = "*"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
